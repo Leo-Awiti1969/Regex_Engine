@@ -1,0 +1,43 @@
+type: code
+custom_name: Lower the string!
+files:
+- name: main.py
+  visible: true
+  text: |-
+    # tests for the string_to_lower() function
+    import unittest
+
+
+    class TestStringToLower(unittest.TestCase):
+        def test_string_to_lower(self):
+            # testing for an exception one way
+            self.assertRaises()
+
+            # testing for an exception another way
+            with self.assertRaises():
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10805#comment
+status: Failed
+feedback:
+  message: |
+    Failed. Runtime error
+
+    Error:
+    E
+    ======================================================================
+    ERROR: test_string_to_lower (__main__.TestStringToLower)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "jailed_code", line 13, in test_string_to_lower
+        self.assertRaises(ValueError, self.str.islower())
+    AttributeError: 'TestStringToLower' object has no attribute 'str'
+
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.000s
+
+    FAILED (errors=1)
+  time: Thu, 15 Apr 2021 15:57:37 UTC
+record: -1
